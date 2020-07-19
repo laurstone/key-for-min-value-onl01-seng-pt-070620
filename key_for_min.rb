@@ -3,21 +3,7 @@
 
 def key_for_min_value(name_hash)
  hash = {:blake => 500, :ashley => 2, :adam => 1}
-  hash.collect do |key, value|
-    if value < 2 
-      
-  return 
+  hash.collect do |number|
+  return number 
 end
-end
-
-def key_for_min_value(hash)
-  lowest_key = nil
-  lowest_value = Float::INFINITY
-  hash.each do |k, v|
-    if v < lowest_value
-      lowest_value = v
-      lowest_key = k
-    end
-  end
-  lowest_key
 end
